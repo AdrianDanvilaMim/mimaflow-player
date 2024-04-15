@@ -28,6 +28,85 @@
   color: #61dafb;
 }
 
+.header-reproducer{
+  height: 20vh;
+  background: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar{
+  height: 10%;
+  width: 80%;
+  text-align: start;
+
+}
+fieldset{
+  border: none;
+}
+.search-form{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.main-container{
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.song-list{
+  width: 80%;
+  height: 60%;
+}
+
+.songs-headers{
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% auto ;
+  height: 20%;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.songs-details{
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% auto ;
+  height: 30%;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.Song-cards-container{
+  height: 100%;
+  overflow: scroll;
+
+}
+/*general css*/
+.w-25{
+  width: 25%;
+}
+
+.w-50{
+  width: 50%;
+}
+
+.w-75{
+  width: 75%;
+}
+
+.w-90{
+  width: 100%;
+}
+
+.w-100{
+  width: 100%;
+}
+.m-5{
+  margin-right: 10px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
