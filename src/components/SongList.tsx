@@ -1,8 +1,15 @@
 import {SongCard} from "./SongCard";
-import {useState} from "react";
+import React from "react";
 
-export const SongList =({className}:{className:string})=>{
-    const [squares, setSquares] = useState(Array.from(Array(9).keys()));
+import {RootState} from "../redux/store";
+import {useSelector} from "react-redux";
+
+export const SongList = ({className}:{className:string})=>{
+
+
+    const songs = useSelector((state: RootState) => state.songs.data)
+    console.log(songs)
+    console.log('rerender list '+ songs)
 
     return(
 
@@ -19,10 +26,10 @@ export const SongList =({className}:{className:string})=>{
                 show the first 10 songs with SongCard component
                 */}
                 {
-                    squares.map(()=>{
+                    songs.map((element)=>{
                         return(
-                            <SongCard></SongCard>
-                            
+                            <SongCard song={element}></SongCard>
+
                         )
                     })
                 }
@@ -30,3 +37,4 @@ export const SongList =({className}:{className:string})=>{
         </div>
     )
 }
+
