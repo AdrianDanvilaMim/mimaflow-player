@@ -23,7 +23,7 @@ export const SearchBar=({className}:{className:string})=>{
                 const response = await fetch("https://api.spotify.com/v1/search?q=name:' " + store.getState().songs.song + "'&type=track&limit=10", {
                     method: 'GET',
                     headers: {
-                        "Authorization": "Bearer BQAh5vxYaM-rWCxHu2IbZomDiFb8-8tAbcKeD9M4RbuPR05vJgrdU6mY5zymjaY2Qr_E46qBr9HrhBMLnzXwWbbget480QytTFwuIw2c4f2nKm2hbS8"
+                        "Authorization": "Bearer pon el tuyo"
                     }
                 })
                 const json = await response.json()
