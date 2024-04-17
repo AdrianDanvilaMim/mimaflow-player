@@ -1,5 +1,5 @@
-import {useDispatch, useSelector} from "react-redux";
-import {AppDispatch, RootState, store} from "../redux/store";
+import {useDispatch} from "react-redux";
+import {AppDispatch, store} from "../redux/store";
 import {changeValue, deleteData, submitData} from "../redux/songSlice";
 import React from "react";
 

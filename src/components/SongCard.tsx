@@ -1,6 +1,6 @@
 import React from "react";
 import {useAppDispatch} from "../hooks/hooks";
-import {changeSongReproducer, changeValue} from "../redux/songSlice";
+import {changeSongReproducer} from "../redux/songSlice";
 
 
 interface SongInterface{
@@ -30,7 +30,7 @@ export const   SongCard=(props:SongInterface)=>{
             <div><b>{props.song.name}</b></div>
             <div><b>{props.song.album}</b></div>
             <div><b>{props.song.artist}</b></div>
-            <div className={"img-container"}><img  src={props.song.img}/></div>
+            <div className={"img-container"}><img alt={""} src={props.song.img}/></div>
         </div>
     )
 }
