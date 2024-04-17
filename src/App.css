@@ -61,7 +61,7 @@ fieldset{
 
 .song-list{
   width: 80%;
-  height: 60%;
+  height: 50%;
 }
 
 .songs-headers{
@@ -75,7 +75,7 @@ fieldset{
 .songs-details{
   display: grid;
   grid-template-columns: 10% 20% 20% 20% auto ;
-  height: 70%;
+  height: 60%;
   align-items: center;
   border-bottom: 1px solid black;
   font-size: 0.7em;
@@ -115,6 +115,12 @@ img{
 }
 .m-5{
   margin-right: 10px;
+}
+
+.reproducer{
+  width: 80%;
+  margin: 10vh;
+
 }
 @keyframes App-logo-spin {
   from {
