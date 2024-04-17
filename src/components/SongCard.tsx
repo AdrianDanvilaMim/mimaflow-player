@@ -1,6 +1,12 @@
+import React from "react";
+import {useAppDispatch} from "../hooks/hooks";
+import {changeSongReproducer, changeValue} from "../redux/songSlice";
+
+
 interface SongInterface{
     song:{
         name:string,
+        actualSong:string,
         artist:string,
         album:string,
         img:string,
@@ -8,9 +14,19 @@ interface SongInterface{
 }
 
 export const   SongCard=(props:SongInterface)=>{
+    const dispatch = useAppDispatch();
+
+    const onClickHandler:React.MouseEventHandler<HTMLButtonElement> =(event)=>{
+        dispatch(changeSongReproducer(event.currentTarget.value))
+
+
+    }
+
     return(
         <div className={"songs-details"}>
-            <div>imagen con boton</div>
+            <div>
+                <button onClick={onClickHandler} value={props.song.actualSong}>play</button>
+            </div>
             <div><b>{props.song.name}</b></div>
             <div><b>{props.song.album}</b></div>
             <div><b>{props.song.artist}</b></div>

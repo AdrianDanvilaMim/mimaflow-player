@@ -4,7 +4,7 @@ export const MimHeader=()=>{
     return (
         <header className="header-reproducer">
             <p>
-                mimaflow reproduces
+                mimaflow reproducer
             </p>
         </header>
     )
